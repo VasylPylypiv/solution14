@@ -1,0 +1,235 @@
+Windows PowerShell
+Copyright (C) 2009 Microsoft Corporation. All rights reserved.
+
+K:\Robota\Java\src\com> c:
+C:\Users\Viking\AppData\Local\GitHub\PoshGit_869d4c5159797755bc04749db47b166136e
+59132 [(unknown)]> cd..
+C:\Users\Viking\AppData\Local\GitHub> cd..
+C:\Users\Viking\AppData\Local> cd..
+C:\Users\Viking\AppData> cd..
+C:\Users\Viking> cd documents
+C:\Users\Viking\documents> cd bsa-2015
+C:\Users\Viking\documents\bsa-2015 [master]> cd solution14
+C:\Users\Viking\documents\bsa-2015\solution14 [master]> k:
+K:\Robota\Java\src\com> cd..
+K:\Robota\Java\src> cd..
+K:\Robota\Java> cd..
+K:\Robota> cd javascript
+K:\Robota\javascript> cd binary
+K:\Robota\javascript\binary> cd solution14
+K:\Robota\javascript\binary\solution14> git init
+Initialized empty Git repository in K:/Robota/javascript/binary/solution14/.git/
+
+K:\Robota\javascript\binary\solution14 [master +1 ~0 -0 !]> git add readme
+fatal: pathspec 'readme' did not match any files
+K:\Robota\javascript\binary\solution14 [master +1 ~0 -0 !]> git add readme.txt
+K:\Robota\javascript\binary\solution14 [master +1 ~0 -0]> status
+The term 'status' is not recognized as the name of a cmdlet, function, script f
+ile, or operable program. Check the spelling of the name, or if a path was incl
+uded, verify that the path is correct and try again.
+At line:1 char:7
++ status <<<<
+    + CategoryInfo          : ObjectNotFound: (status:String) [], CommandNotFo
+   undException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+K:\Robota\javascript\binary\solution14 [master +1 ~0 -0]> git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   readme.txt
+
+K:\Robota\javascript\binary\solution14 [master +1 ~0 -0]> git commit readme.txt
+[master (root-commit) 4066c50] First commit 16:30 23.07.2015
+ 1 file changed, 1 insertion(+)
+ create mode 100644 readme.txt
+K:\Robota\javascript\binary\solution14 [master]> git commit -a readme.txt
+fatal: Paths with -a does not make sense.
+K:\Robota\javascript\binary\solution14 [master +0 ~1 -0]> git commit -a -m 'adde
+d few additional lines' readme.txt
+fatal: Paths with -a does not make sense.
+K:\Robota\javascript\binary\solution14 [master +0 ~1 -0]> git add readme.txt
+K:\Robota\javascript\binary\solution14 [master +0 ~1 -0]> git commit readme.txt
+[master bc99994] Few lines added 16:34 23.07.2015
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+K:\Robota\javascript\binary\solution14 [master]> git remote
+K:\Robota\javascript\binary\solution14 [master]> git remote -v
+K:\Robota\javascript\binary\solution14 [master]> git remote add origin https://g
+ithub.com/VasylPylypiv/solution14.git
+K:\Robota\javascript\binary\solution14 [master]> git push -u origin master
+Counting objects: 6, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (6/6), 581 bytes | 0 bytes/s, done.
+Total 6 (delta 0), reused 0 (delta 0)
+To https://github.com/VasylPylypiv/solution14.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+K:\Robota\javascript\binary\solution14 [master]> git add readme.txt
+K:\Robota\javascript\binary\solution14 [master +0 ~1 -0]> git commit readme.txt
+[master 16f3dcc] Changing all language to English 16:39 23.07.2015
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+K:\Robota\javascript\binary\solution14 [master]> git push origin master
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 359 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/VasylPylypiv/solution14.git
+   bc99994..16f3dcc  master -> master
+K:\Robota\javascript\binary\solution14 [master]> git remote add origin https://g
+ithub.com/VasylPylypiv/solution14.git
+fatal: Not a git repository (or any of the parent directories): .git
+K:\Robota\javascript\binary\solution14> git remote add origin https://github.com
+/VasylPylypiv/solution14.git
+fatal: Not a git repository (or any of the parent directories): .git
+K:\Robota\javascript\binary\solution14> git push -u origin master
+fatal: Not a git repository (or any of the parent directories): .git
+K:\Robota\javascript\binary\solution14> git init
+Initialized empty Git repository in K:/Robota/javascript/binary/solution14/.git/
+
+K:\Robota\javascript\binary\solution14 [master +1 ~0 -0 !]> git add readme.txt
+K:\Robota\javascript\binary\solution14 [master +1 ~0 -0]> git commit *.*
+[master (root-commit) 6f27ab4] 1001: Creating file (Created file readme.txt)
+ 1 file changed, 3 insertions(+)
+ create mode 100644 readme.txt
+K:\Robota\javascript\binary\solution14 [master]> git remote add origin https://g
+ithub.com/VasylPylypiv/solution14.git
+K:\Robota\javascript\binary\solution14 [master]> git push -u origin master
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 279 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/VasylPylypiv/solution14.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+K:\Robota\javascript\binary\solution14 [master]> git add *.*
+K:\Robota\javascript\binary\solution14 [master +0 ~1 -0]> git commit *.*
+[master 1e5fb7e] 1002: Editing file (Edited file readme.txt)
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+K:\Robota\javascript\binary\solution14 [master]> git add readme.txt
+K:\Robota\javascript\binary\solution14 [master]> git commit readme.txt
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working directory clean
+K:\Robota\javascript\binary\solution14 [master]> git push
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 336 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/VasylPylypiv/solution14.git
+   6f27ab4..1e5fb7e  master -> master
+K:\Robota\javascript\binary\solution14 [master]> git checkout develop
+error: pathspec 'develop' did not match any file(s) known to git.
+K:\Robota\javascript\binary\solution14 [master]> git pull
+From https://github.com/VasylPylypiv/solution14
+ * [new branch]      develop    -> origin/develop
+ * [new branch]      develop-feature1 -> origin/develop-feature1
+ * [new branch]      develop-feature2 -> origin/develop-feature2
+Already up-to-date.
+K:\Robota\javascript\binary\solution14 [master]> git checkout develop
+Branch develop set up to track remote branch develop from origin.
+Switched to a new branch 'develop'
+K:\Robota\javascript\binary\solution14 [develop]> git add develop.txt
+K:\Robota\javascript\binary\solution14 [develop +1 ~0 -0]> git commit develop.tx
+t
+[develop f7dc376] 1003: Adding file to develop branch (File develop.txt has been
+ added)
+ 1 file changed, 1 insertion(+)
+ create mode 100644 develop.txt
+K:\Robota\javascript\binary\solution14 [develop]> git push
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 350 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/VasylPylypiv/solution14.git
+   1e5fb7e..f7dc376  develop -> develop
+K:\Robota\javascript\binary\solution14 [develop]> git add develop.txt
+K:\Robota\javascript\binary\solution14 [develop +0 ~1 -0 | +1 ~0 -0 !]> git comm
+it develop.txt
+[develop 780c522] 1004 Editing second file (File develop.txt has been edited)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+K:\Robota\javascript\binary\solution14 [develop +1 ~0 -0 !]> git push
+Counting objects: 6, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 364 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/VasylPylypiv/solution14.git
+   f7dc376..780c522  develop -> develop
+K:\Robota\javascript\binary\solution14 [develop +1 ~0 -0 !]> git checkout develo
+p-feature1
+Branch develop-feature1 set up to track remote branch develop-feature1 from orig
+in.
+Switched to a new branch 'develop-feature1'
+K:\Robota\javascript\binary\solution14 [develop-feature1 +2 ~0 -0 !]> git add de
+velop-f1.txt
+K:\Robota\javascript\binary\solution14 [develop-feature1 +1 ~0 -0 | +1 ~0 -0 !]>
+ git commit develop-f1.txt
+[develop-feature1 535fb01] 1005: Add file to develop-feature1 branch (File devel
+op-f1.txt has been added)
+ 1 file changed, 1 insertion(+)
+ create mode 100644 develop-f1.txt
+K:\Robota\javascript\binary\solution14 [develop-feature1 +1 ~0 -0 !]> git push d
+evelop-f1.txt
+fatal: You are pushing to remote 'develop-f1.txt', which is not the upstream of
+your current branch 'develop-feature1', without telling me what to push
+to update which remote branch.
+K:\Robota\javascript\binary\solution14 [develop-feature1 +1 ~0 -0 !]> git push
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 354 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/VasylPylypiv/solution14.git
+   1e5fb7e..535fb01  develop-feature1 -> develop-feature1
+K:\Robota\javascript\binary\solution14 [develop-feature1 +1 ~0 -0 !]> git checko
+ut develop
+Switched to branch 'develop'
+Your branch is up-to-date with 'origin/develop'.
+K:\Robota\javascript\binary\solution14 [develop +1 ~0 -0 !]> git checkout develo
+p-feature1
+Switched to branch 'develop-feature1'
+Your branch is up-to-date with 'origin/develop-feature1'.
+K:\Robota\javascript\binary\solution14 [develop-feature1 +1 ~0 -0 !]> git checko
+ut develop develop.txt
+K:\Robota\javascript\binary\solution14 [develop-feature1 +1 ~0 -0 | +1 ~0 -0 !]>
+ git add develop.txt
+K:\Robota\javascript\binary\solution14 [develop-feature1 +1 ~0 -0 | +1 ~0 -0 !]>
+ git commit develop.txt
+[develop-feature1 7759712] 1006. Edit file from develop branch (File develop.txt
+ from branch develop has been edited)
+ 1 file changed, 1 insertion(+)
+ create mode 100644 develop.txt
+K:\Robota\javascript\binary\solution14 [develop-feature1 +1 ~0 -0 !]> git push
+Counting objects: 7, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 418 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/VasylPylypiv/solution14.git
+   535fb01..7759712  develop-feature1 -> develop-feature1
+K:\Robota\javascript\binary\solution14 [develop-feature1 +1 ~0 -0 !]> git checko
+ut develop-feature2
+Branch develop-feature2 set up to track remote branch develop-feature2 from orig
+in.
+Switched to a new branch 'develop-feature2'
+K:\Robota\javascript\binary\solution14 [develop-feature2 +1 ~0 -0 !]> git status
+
+On branch develop-feature2
+Your branch is up-to-date with 'origin/develop-feature2'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        log.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+K:\Robota\javascript\binary\solution14 [develop-feature2 +1 ~0 -0 !]>
